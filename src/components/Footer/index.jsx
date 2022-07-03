@@ -2,21 +2,23 @@ import { StyledFooter } from "./style"
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 
 const Footer = () =>{
+
+    const RedirectToGit = ()=>{
+        window.location.assign("https://github.com/paulo-moro")
+    }
+
+    const RedirectToLinkedin = ()=>{
+        window.location.assign("https://www.linkedin.com/in/paulo-henrique-moro-dos-santos/")
+    }
     return(
         <StyledFooter>
            
 
-            <nav className="container--nav nav--page">
-                <p>Sobre</p>
-                <p>Tecnologias</p>
-                <p>Qualificações</p>
-                <p>Projetos</p>
-                <p>Contato</p>                
-            </nav>
+        
 
             <nav className="container--nav nav--outpage">
-                <p><AiFillGithub size="30px"/></p>
-                <p><AiFillLinkedin size="30px"/></p>
+                <p onClick={RedirectToGit}><AiFillGithub size="30px"/></p>
+                <p onClick={RedirectToLinkedin}><AiFillLinkedin size="30px"/></p>
             </nav>
 
 

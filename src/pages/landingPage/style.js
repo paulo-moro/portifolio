@@ -8,4 +8,10 @@ export const StyledMain = styled.main`
   display: flex;
   overflow-x: scroll;
   gap: 40px;
+  @media(min-width:500px){
+
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+  }
 `

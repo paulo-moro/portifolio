@@ -61,25 +61,41 @@ export const StyledSection = styled.section`
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+     
     }
-    p{
-      width: 75%;
-    }
+    
     h3{
       color: #A9A;
       width: 100%;
+      text-align: center;
     }
-    .concepts--container{
-      display: flex;
-      gap: 5px;
-      flex-wrap: wrap;
-      width: 95%;
-      span{
-        background-color: #F05 ;
-        padding: 2px;
-        border-radius:5px;
+    :hover{
+      cursor: pointer;
+    }
+  }
+  @media(min-width:500px){
+
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+    width: 50%;
+    p{
+      width: 80%;
+    }
+    .project--list{
+      width: 80%;
+      li{
+      width: 25%;
+      }
+      figure{
+        width: 95%;
+      }
+      img{
+        width: 80%;
       }
     }
   }
+  
+
 `
 

@@ -8,7 +8,9 @@ export const StyledHeader = styled.header`
   align-items: center;
   background-color: #000;
   padding: 5px;
-  
+  svg:hover{
+    cursor: pointer;
+  }
   h2{
     color: #FFF;
   }
@@ -34,6 +36,7 @@ export const StyledHeader = styled.header`
     .nav--outpage{
       display: flex;
     }
+   
   }
 
 `

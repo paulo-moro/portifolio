@@ -8,6 +8,9 @@ flex-direction: column;
 align-items: center;
 background-color: #000;
 padding: 5px;
+svg:hover{
+    cursor: pointer;
+  }
 
 h2{
   color: #FFF;
