@@ -15,7 +15,7 @@ const ProjectList = ()=>{
     }
 
     return(
-        <StyledSection id="projects">
+        <StyledSection id="projects" >
             <h2>Projetos</h2>
             <ul className="project--list">
                 {projects?.map(({id,name, description,module, concepts, appUrl, gitHubUrl})=>(

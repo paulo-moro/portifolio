@@ -29,11 +29,13 @@ export const StyledSection = styled.section`
   .techs--container{
     display: flex;
     flex-direction: column;
+    width: 100%;
     
     ul{
       display: flex;
       padding: 0px;
       justify-content: space-around;
+      gap: 10px;
     }
     ul li{
       list-style: none;
@@ -55,7 +57,9 @@ export const StyledSection = styled.section`
     display: flex;
     gap: 40px;
     flex-direction: column;
+    width: 100%;
   }
+  
   .qualification--container{
     padding: 0px;
     li{
@@ -81,9 +85,12 @@ export const StyledSection = styled.section`
       flex-wrap: wrap;
      p{
       color: #FFF;
+      font-size: 1.5em;
      }
      nav{
       display: flex;
+      width: 40%;
+      justify-content: space-around;
      }
      button{
       display: flex;
@@ -91,6 +98,7 @@ export const StyledSection = styled.section`
       background-color: #000;
       border: none;
       color: #FFF;
+      font-size: 1.5em;
      }
     }
     
@@ -98,10 +106,13 @@ export const StyledSection = styled.section`
       color: #A9A;
       text-align:left;
       width: 100%;
+      font-size: 2em;
+      font-weight: bold;
     }
-    :hover{
+    button:hover{
       cursor: pointer;
     }
+    
   }
 
 
@@ -110,11 +121,12 @@ export const StyledSection = styled.section`
 
     flex-direction: column;
     overflow-x: hidden;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
     p{
       width: 80%;
     }
+   
     .project--list{
       width: 80%;
       

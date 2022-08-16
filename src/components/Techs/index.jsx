@@ -1,11 +1,10 @@
 import { StyledSection } from "./../GeneralStyles/style"
 import {AiFillHtml5} from "react-icons/ai"
-import {IoLogoCss3} from  "react-icons/io"
-import {DiJavascript,DiReact, DiPostgresql} from "react-icons/di"
+
 import {FaNodeJs} from "react-icons/fa"
 import {SiTypescript } from "react-icons/si"
 import {FaPython} from "react-icons/fa"
-import {SiDjango} from "react-icons/si"
+import {SiDjango, SiJavascript,SiCsswizardry, SiReact, SiPostgresql} from "react-icons/si"
 
 const Techs = ()=>{
     return(
@@ -16,11 +15,11 @@ const Techs = ()=>{
                     <h3>Aprendidas</h3>
                     <ul>
                         <li><AiFillHtml5 size={"2em"}/></li>
-                        <li><IoLogoCss3 size={"2em"}/></li>
-                        <li><DiJavascript size={"2em"}/></li>
-                        <li><DiReact size={"2em"}/></li>
+                        <li><SiCsswizardry size={"2em"}/></li>
+                        <li><SiJavascript size={"2em"}/></li>
+                        <li><SiReact size={"2em"}/></li>
                         <li><FaNodeJs size={"2em"}/></li>
-                        <li><DiPostgresql size={"2em"}/></li>
+                        <li><SiPostgresql size={"2em"}/></li>
                         <li><SiTypescript size={"2em"}/></li>
                     </ul>                       
                         
