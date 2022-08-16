@@ -14,9 +14,9 @@ const LandingPage = ()=>{
             <Header/>
                 <StyledMain>
                     <AboutMe/>
-                    <Techs/>
-                    <Qualifications/>
-                    <ProjectList/>
+                    <Techs />
+                    <Qualifications />
+                    <ProjectList  />
                 </StyledMain>
             <Footer/>
         </>

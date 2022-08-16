@@ -3,9 +3,9 @@ import certificado from "./../../assets/img/certificado.jpg"
 
 const Qualifications = ()=>{
     return(
-        <StyledSection>
+        <StyledSection id="qualification">
             <h2>Qualificações</h2>
-            <ul>  
+            <ul className="qualification--container">  
                 <li>
                     <h3>Front-end</h3>
                     <figure>

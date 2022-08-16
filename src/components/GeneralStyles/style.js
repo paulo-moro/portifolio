@@ -13,11 +13,12 @@ export const StyledSection = styled.section`
   h2{    
     width: 100%;
     margin: 0px;
-    height: fit-content;    
+    height: fit-content; 
+    color: #a9a;   
   }
   h3{
     margin: 0px;
-    
+    color: #a9a;   
   }
   p{
     margin: 0px;
@@ -25,54 +26,86 @@ export const StyledSection = styled.section`
     width: 270px;
   }
   
+  .techs--container{
+    display: flex;
+    flex-direction: column;
+    
+    ul{
+      display: flex;
+      padding: 0px;
+      justify-content: space-around;
+    }
+    ul li{
+      list-style: none;
+      color:rgba(255,255,255,0.5)     
+      
+    }
+  }
   
   figure{
     margin: 0px;
   }
 
   img{
-    width: 250px;
+    width: 290px;
   }    
   
-  ul{
-    padding: 0px;
-  }  
-  ul li{
-    list-style: none;
-    
-  }
+
   .list--container{
     display: flex;
     gap: 40px;
+    flex-direction: column;
+  }
+  .qualification--container{
+    padding: 0px;
+    li{
+      list-style: none;
+
+    }
   }
   .project--list{
     display: flex;
+    flex-direction: column; 
     width: 310px;
     flex-wrap: wrap;
     font-size: 8px;
     gap: 5px;
+    padding: 0px;
     li{
       border-radius: 20px;
-      width: 40%;
       gap: 10px;
       padding: 10px;
       color: #000;
-      background-color: #FFF;
       display: flex;
+      justify-content:flex-start ;
       flex-wrap: wrap;
-      justify-content: center;
-     
+     p{
+      color: #FFF;
+     }
+     nav{
+      display: flex;
+     }
+     button{
+      display: flex;
+      align-items: center;
+      background-color: #000;
+      border: none;
+      color: #FFF;
+     }
     }
     
     h3{
       color: #A9A;
+      text-align:left;
       width: 100%;
-      text-align: center;
     }
     :hover{
       cursor: pointer;
     }
   }
+
+
+
   @media(min-width:500px){
 
     flex-direction: column;
@@ -84,9 +117,7 @@ export const StyledSection = styled.section`
     }
     .project--list{
       width: 80%;
-      li{
-      width: 25%;
-      }
+      
       figure{
         width: 95%;
       }

@@ -8,11 +8,25 @@ export const StyledHeader = styled.header`
   align-items: center;
   background-color: #000;
   padding: 5px;
+  .Personal_data{
+    display: flex;
+    align-items: center;
+  }
+  figure{
+    width: 10%;
+    img{
+      border-radius: 50%;
+      width: 100%;
+      border:#FFF solid 0.2em
+
+    }
+  }
   svg:hover{
     cursor: pointer;
   }
   h2{
     color: #FFF;
+    
   }
   .nav--page{
     display: none;
@@ -28,6 +42,17 @@ export const StyledHeader = styled.header`
     justify-content: space-around;
     color: #FFF;
   }
+  .nav--inpage{
+    display: none;
+    width: 100%;
+    justify-content: space-around;
+    color: #FFF;
+    a{
+      text-decoration: none;
+      color:#FFF;
+      font-weight: bold;
+    }
+  }
   @media(min-width:500px){
 
     .nav--page{
@@ -36,7 +61,9 @@ export const StyledHeader = styled.header`
     .nav--outpage{
       display: flex;
     }
-   
+    .nav--inpage{
+      display: flex;
+    }
   }
 
 `
