@@ -6,26 +6,36 @@ export const StyledHeader = styled.header`
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  background-color: #000;
-  padding: 5px;
+  background-color: var(--black);
+  border-radius: 0% 0% 10% 10%;
+  padding: 3em;
+  border-bottom: 0.1em solid var(--blue1);
+  box-shadow: 0rem 0rem 2rem var(--blue3) inset;
+  
+  padding: 2em 0em 2em 0em;
   .Personal_data{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    padding: 1em 0em;
+    color:var(--blue1);
   }
   figure{
-    width: 10%;
+    width: 20%;
     img{
       border-radius: 50%;
       width: 100%;
-      border:#FFF solid 0.2em
-
+      border:var(--blue1) solid 0.2em;
+      box-shadow: 0rem 0rem 2rem var(--blue3)
+      
     }
   }
   svg:hover{
     cursor: pointer;
   }
   h2{
-    color: #FFF;
+    color: var(--blue1);
+    font-family: Arial, Helvetica, sans-serif, 'Roboto';
     
   }
   .nav--page{
@@ -33,23 +43,25 @@ export const StyledHeader = styled.header`
     flex-wrap: wrap;
     width: 60%;
     justify-content: space-between;
-    color: #FFF;
+    color:var(--blue1);
   }
   
   .nav--outpage{
     display: none;
     width: 100%;
     justify-content: space-around;
-    color: #FFF;
+    color: var(--blue1);
   }
   .nav--inpage{
     display: none;
     width: 100%;
     justify-content: space-around;
-    color: #FFF;
+    color: var(--blue1);
+    border-radius: 0% 0% 20% 20%;
+    
     a{
       text-decoration: none;
-      color:#FFF;
+      color:var(--blue1);
       font-weight: bold;
     }
   }

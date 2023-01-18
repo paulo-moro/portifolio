@@ -1,41 +1,54 @@
 import styled from "styled-components"
 
 export const StyledSection = styled.section`
-  background-color: #000;
-  color: #FFF;
+  background-color: var(--black0);
+  color: var(--blue1);
   display: flex;
   flex-direction:column;
   align-items: center;
   flex-wrap: wrap;
-  width: 360px;
+  width: 95%;
   height: fit-content;
+  font-family: Arial, Helvetica, sans-serif, 'Roboto';
+  box-shadow: 0rem 0rem 2rem var(--blue3) inset;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  gap: 0.5rem;
   
   h2{    
     width: 100%;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif, 'Roboto';
     height: fit-content; 
-    color: #a9a;   
+    color: var(--blue1);   
+    font-weight: bold;
+    text-align: center;
   }
   h3{
     margin: 0px;
-    color: #a9a;   
+    color: var(--blue1);
+    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+    padding   : 2em 0em ;
+    text-align: center;
   }
   p{
     margin: 0px;
     text-align: justify;
     width: 270px;
+    font-family: Arial, Helvetica, sans-serif, 'Roboto';
   }
   
   .techs--container{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 360px;
     
     ul{
       display: flex;
       padding: 0px;
       justify-content: space-around;
       gap: 10px;
+      flex-wrap: wrap;
     }
     ul li{
       list-style: none;
@@ -84,26 +97,28 @@ export const StyledSection = styled.section`
       justify-content:flex-start ;
       flex-wrap: wrap;
      p{
-      color: #FFF;
+      color: var(--blue1);
       font-size: 1.5em;
      }
      nav{
       display: flex;
-      width: 40%;
-      justify-content: space-around;
+      width: 100%;
+      justify-content: space-evenly;
      }
      button{
       display: flex;
       align-items: center;
-      background-color: #000;
+      background-color: var(--blue3);
       border: none;
-      color: #FFF;
+      padding: 0.5em;
+      border-radius: 1em;
+      color: var(--blue1);
       font-size: 1.5em;
      }
     }
     
     h3{
-      color: #A9A;
+      color: var(--blue2);
       text-align:left;
       width: 100%;
       font-size: 2em;
@@ -118,18 +133,29 @@ export const StyledSection = styled.section`
 
 
   @media(min-width:500px){
-
+    display: flex;
     flex-direction: column;
-    overflow-x: hidden;
-    align-items: flex-start;
-    width: 50%;
+    align-items: center;
+   
+    .list--container{
+      align-items: center;
+    }
     p{
       width: 80%;
     }
    
     .project--list{
       width: 80%;
-      
+      li{
+        display: flex;
+        justify-content:center;
+      }
+      li h3{
+        text-align: center;
+      }
+      li p{
+        text-align: center;
+      }
       figure{
         width: 95%;
       }

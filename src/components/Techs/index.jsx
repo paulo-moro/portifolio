@@ -21,18 +21,19 @@ const Techs = ()=>{
                         <li><FaNodeJs size={"2em"}/></li>
                         <li><SiPostgresql size={"2em"}/></li>
                         <li><SiTypescript size={"2em"}/></li>
+                        <li><FaPython size={"2em"}/></li>
+                        <li><SiDjango size={"2em"}/></li>
                     </ul>                       
                         
                 </section>
 
-                <section className="techs--container">
+                {/* <section className="techs--container">
                     <h3>Aprendendo</h3>
                     <ul>
-                        <li><FaPython size={"2em"}/></li>
-                        <li><SiDjango size={"2em"}/></li>
+                        
                     </ul>
 
-                </section>
+                </section> */}
                 
             </div>
         </StyledSection>

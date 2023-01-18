@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledMain = styled.main`
-  background-color: #000;
-  color: #FFF;
+  background-color: var(--black0);
+  color: var(--white);
   height: 33%;
   padding: 30px 20px;
   display: flex;
@@ -13,5 +13,6 @@ export const StyledMain = styled.main`
     flex-direction: column;
     overflow-x: hidden;
     align-items: center;
+ 
   }
 `

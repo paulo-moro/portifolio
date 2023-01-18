@@ -21,19 +21,17 @@ const Header = () =>{
                     <img src={Perfil} alt="Dev_img" />
                 </figure>
                 <h2>Paulo  Moro</h2>  
+                <p onClick={RedirectToGit}><AiFillGithub size="30px"/></p>
+                <p onClick={RedirectToLinkedin}><AiFillLinkedin size="30px"/></p>
 
             </section>
             <nav className="container--nav nav--inpage">
                 <AnchorLink href='#tech'>Techs</AnchorLink>
-                <AnchorLink href='#qualification'>Quaificação</AnchorLink>
+                <AnchorLink href='#qualification'>Qualificação</AnchorLink>
                 <AnchorLink href='#projects'>Projetos</AnchorLink>
             </nav>         
 
-            <nav className="container--nav nav--outpage">
-                <p onClick={RedirectToGit}><AiFillGithub size="30px"/></p>
-                <p onClick={RedirectToLinkedin}><AiFillLinkedin size="30px"/></p>
-                    
-            </nav>
+            
 
 
         </StyledHeader>
