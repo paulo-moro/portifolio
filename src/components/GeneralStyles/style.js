@@ -83,8 +83,6 @@ export const StyledSection = styled.section`
   }
   .project--list{
     display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
     font-size: 8px;
     gap: 2rem;
     padding: 0px;
@@ -94,11 +92,13 @@ export const StyledSection = styled.section`
       width: fit-content;
       border-radius: 20px;
       gap: 0.5rem;
-      padding: 0.5rem;
+      padding: 0.9rem;
       color: #000;
       display: flex;
       flex-direction: column;
       border: var(--blue1) solid 0.1rem;
+      align-items: center;
+      justify-content: space-between;
      p{
       color: var(--blue1);
       font-size: 1.5em;
@@ -141,7 +141,7 @@ export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    gap: 1rem;
     .list--container{
       align-items: center;
     }
@@ -151,17 +151,18 @@ export const StyledSection = styled.section`
     }
    
     .project--list{
-      align-items: center;
+      flex-wrap: wrap;
+      width: 95%;
+      justify-content: center;
       li{
-        display: flex;
-        align-items: center;
-        width: 40%;
+        width: 25%;
       }
       li h3{
         text-align: center;
       }
       li p{
         text-align: center;
+        width: 80%;
       }
       figure{
         width: 95%;
