@@ -94,7 +94,6 @@ export const StyledSection = styled.section`
       padding: 10px;
       color: #000;
       display: flex;
-      justify-content:flex-start ;
       flex-wrap: wrap;
      p{
       color: var(--blue1);
@@ -102,8 +101,9 @@ export const StyledSection = styled.section`
      }
      nav{
       display: flex;
+      justify-content: center;
       width: 100%;
-      justify-content: space-evenly;
+      gap: 2rem;
      }
      button{
       display: flex;

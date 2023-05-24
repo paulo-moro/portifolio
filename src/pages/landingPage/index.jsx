@@ -12,12 +12,12 @@ const LandingPage = ()=>{
     return(
         <>
             <Header/>
-                <StyledMain>
-                    <AboutMe/>
-                    <Techs />
-                    <Qualifications />
-                    <ProjectList  />
-                </StyledMain>
+            <StyledMain>
+                <AboutMe/>
+                <Techs />
+                <Qualifications />
+                <ProjectList  />
+            </StyledMain>
             <Footer/>
         </>
     )

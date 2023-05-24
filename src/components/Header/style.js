@@ -8,11 +8,10 @@ export const StyledHeader = styled.header`
   align-items: center;
   background-color: var(--black);
   border-radius: 0% 0% 10% 10%;
-  padding: 3em;
   border-bottom: 0.1em solid var(--blue1);
   box-shadow: 0rem 0rem 2rem var(--blue3) inset;
-  
   padding: 2em 0em 2em 0em;
+  height: 15vh;
   .Personal_data{
     display: flex;
     align-items: center;
@@ -21,7 +20,7 @@ export const StyledHeader = styled.header`
     color:var(--blue1);
   }
   figure{
-    width: 20%;
+    width: 10%;
     img{
       border-radius: 50%;
       width: 100%;

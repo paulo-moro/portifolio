@@ -7,10 +7,10 @@ justify-content: space-around;
 flex-direction: column;
 align-items: center;
 background-color: var(--black);
-padding: 3em 0em 3em 0em;
 border-radius: 10% 10% 0% 0%  ;
 border-top: 0.1em var(--blue1) solid;
 box-shadow: 0rem 0rem 2rem var(--blue3) inset;
+height: 10vh;
 svg:hover{
     cursor: pointer;
   }
