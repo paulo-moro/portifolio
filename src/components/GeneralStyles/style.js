@@ -23,6 +23,7 @@ export const StyledSection = styled.section`
     color: var(--blue1);   
     font-weight: bold;
     text-align: center;
+    font-size: 1.5rem;
   }
   h3{
     margin: 0px;
@@ -83,26 +84,30 @@ export const StyledSection = styled.section`
   .project--list{
     display: flex;
     flex-direction: column; 
-    width: 310px;
     flex-wrap: wrap;
     font-size: 8px;
-    gap: 5px;
+    gap: 2rem;
     padding: 0px;
+    
+    
     li{
+      width: fit-content;
       border-radius: 20px;
-      gap: 10px;
-      padding: 10px;
+      gap: 0.5rem;
+      padding: 0.5rem;
       color: #000;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      border: var(--blue1) solid 0.1rem;
      p{
       color: var(--blue1);
       font-size: 1.5em;
+      width: 50%;
      }
      nav{
       display: flex;
       justify-content: center;
-      width: 100%;
+      width: fit-content;
       gap: 2rem;
      }
      button{
@@ -120,7 +125,7 @@ export const StyledSection = styled.section`
     h3{
       color: var(--blue2);
       text-align:left;
-      width: 100%;
+      width: fit-content;
       font-size: 2em;
       font-weight: bold;
     }
@@ -141,14 +146,16 @@ export const StyledSection = styled.section`
       align-items: center;
     }
     p{
-      width: 80%;
+      width: 75%;
+      line-height: 1.5rem;
     }
    
     .project--list{
-      width: 80%;
+      align-items: center;
       li{
         display: flex;
-        justify-content:center;
+        align-items: center;
+        width: 40%;
       }
       li h3{
         text-align: center;
